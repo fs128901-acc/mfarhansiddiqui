@@ -1,241 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Muhammad Farhan Siddiqui — Accounts and Finance Professional, specialising in financial reporting, reconciliations, controls and business support." />
-  <meta name="theme-color" content="#0b1726" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Muhammad Farhan Siddiqui — Accounts & Finance Professional and founder of Siddiqui's Accounting Services.">
   <title>Muhammad Farhan Siddiqui | Accounts & Finance Professional</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="progress-bar" id="progressBar"></div>
   <header class="site-header">
-    <nav class="nav container" aria-label="Main navigation">
-      <a class="brand" href="#home" aria-label="Home">MFS<span>.</span></a>
-      <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
-        <span></span><span></span><span></span>
-      </button>
-      <div class="nav-links" id="nav-links">
-        <a href="#about">About</a>
-        <a href="#expertise">Expertise</a>
-        <a href="#experience">Experience</a>
-        <a href="#business">Business</a>
-        <a href="#contact" class="nav-cta">Contact</a>
+    <nav class="nav container">
+      <a class="brand" href="#home">MFS<span>.</span></a>
+      <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+      <div class="nav-links">
+        <a href="#about">About</a><a href="#expertise">Expertise</a><a href="#experience">Experience</a><a href="#services">Services</a><a href="#business">Business</a><a href="#contact" class="nav-cta">Contact</a>
       </div>
     </nav>
   </header>
 
   <main>
     <section class="hero" id="home">
-      <div class="hero-shape hero-shape-one"></div>
-      <div class="hero-shape hero-shape-two"></div>
+      <div class="hero-orb orb-a"></div><div class="hero-orb orb-b"></div>
       <div class="container hero-grid">
         <div class="hero-copy reveal">
-          <p class="eyebrow">ACCOUNTS &amp; FINANCE PROFESSIONAL</p>
+          <p class="eyebrow">ACCOUNTS & FINANCE PROFESSIONAL</p>
           <h1>Muhammad Farhan <em>Siddiqui</em></h1>
-          <p class="hero-intro">Helping organisations achieve financial clarity through accurate accounting, effective controls, practical reporting and disciplined financial management.</p>
+          <p class="hero-text">I help businesses improve financial accuracy, strengthen controls, simplify reporting, and make better decisions through disciplined accounting and practical finance support.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#about">Explore my profile <span>→</span></a>
-            <a class="button button-secondary" href="#contact">Get in touch</a>
+            <a href="#contact" class="button primary">Contact Me <span>→</span></a>
+            <a href="https://www.linkedin.com/in/fmh190" target="_blank" rel="noopener" class="button secondary">View LinkedIn</a>
           </div>
-          <div class="hero-points">
-            <span><b>01</b> Financial Reporting</span>
-            <span><b>02</b> Reconciliation &amp; Controls</span>
-            <span><b>03</b> Business Support</span>
-          </div>
+          <div class="hero-tags"><span>Financial Reporting</span><span>SAP Business One</span><span>Reconciliations</span><span>Internal Controls</span></div>
         </div>
-
-        <div class="hero-visual reveal">
-          <div class="monogram-card">
-            <div class="orbit orbit-one"></div>
-            <div class="orbit orbit-two"></div>
-            <div class="monogram">MFS</div>
-            <div class="card-caption">
-              <span>Professional profile</span>
-              <strong>Finance · Controls · Growth</strong>
-            </div>
-          </div>
-        </div>
+        <aside class="profile-panel reveal delay-1">
+          <div class="panel-top"><span class="status-dot"></span><span>Open to professional opportunities</span></div>
+          <div class="monogram">MFS</div>
+          <div class="panel-caption"><small>PROFESSIONAL FOCUS</small><strong>Finance · Controls · Reporting</strong></div>
+          <div class="mini-grid"><div><b>01</b><span>Accuracy</span></div><div><b>02</b><span>Clarity</span></div><div><b>03</b><span>Control</span></div></div>
+        </aside>
       </div>
     </section>
 
     <section class="section about" id="about">
-      <div class="container two-column">
-        <div class="section-title reveal">
-          <p class="eyebrow">ABOUT ME</p>
-          <h2>Numbers tell a story.<br><em>I make it clear.</em></h2>
-        </div>
-        <div class="about-copy reveal">
-          <p>I am Muhammad Farhan Siddiqui, an Accounts &amp; Finance professional with hands-on experience in accounting operations, financial reporting, reconciliations, controls, taxation support and management reporting.</p>
-          <p>My work is centred on accuracy, accountability and clear financial information. I help convert complex financial data into practical insights that support stronger decisions and better business performance.</p>
-          <div class="quote-box">“Reliable finance is not only about recording numbers — it is about creating confidence in every decision.”</div>
+      <div class="container split">
+        <div class="reveal"><p class="eyebrow">ABOUT ME</p><h2>Numbers tell a story.<br><em>I make it clear.</em></h2></div>
+        <div class="body-copy reveal delay-1">
+          <p>I am Muhammad Farhan Siddiqui, an Accounts & Finance professional with hands-on experience in financial reporting, reconciliations, process controls, ERP-based accounting, payroll support, budgeting, tax coordination, and management reporting.</p>
+          <p>My working style is structured, practical, and accountability-driven. I focus on ensuring that financial information is accurate, timely, understandable, and useful for decision-making.</p>
+          <blockquote>“Good accounting is not only about compliance. It creates the clarity and confidence businesses need to make sound decisions.”</blockquote>
         </div>
       </div>
     </section>
 
-    <section class="section expertise" id="expertise">
+    <section class="section dark-section" id="expertise">
       <div class="container">
-        <div class="section-heading reveal">
-          <div>
-            <p class="eyebrow eyebrow-light">WHAT I DO</p>
-            <h2>Professional <em>Expertise</em></h2>
-          </div>
-          <p>A practical, control-focused approach to accounting and finance.</p>
-        </div>
-
+        <div class="section-heading reveal"><div><p class="eyebrow light">CORE CAPABILITIES</p><h2>Professional <em>Expertise</em></h2></div><p>Finance expertise built around accuracy, accountability, and useful management information.</p></div>
         <div class="expertise-grid">
-          <article class="expertise-card reveal">
-            <span>01</span>
-            <h3>Accounting &amp; Reporting</h3>
-            <p>Financial accounting, management accounts, month-end closing and structured reporting for management.</p>
-          </article>
-          <article class="expertise-card reveal">
-            <span>02</span>
-            <h3>Reconciliation &amp; Controls</h3>
-            <p>Bank, cash, ledger and partner reconciliations supported by clear ownership and disciplined follow-up.</p>
-          </article>
-          <article class="expertise-card reveal">
-            <span>03</span>
-            <h3>Budgeting &amp; Analysis</h3>
-            <p>Budget preparation, variance analysis and financial insights to support informed operational decisions.</p>
-          </article>
-          <article class="expertise-card reveal">
-            <span>04</span>
-            <h3>Tax &amp; Compliance Support</h3>
-            <p>Organised financial records, documentation and coordination for taxation and regulatory requirements.</p>
-          </article>
-          <article class="expertise-card reveal">
-            <span>05</span>
-            <h3>Finance Systems</h3>
-            <p>Accounting workflows, ERP support and process improvements that make finance operations more efficient.</p>
-          </article>
-          <article class="expertise-card reveal">
-            <span>06</span>
-            <h3>Business Finance Support</h3>
-            <p>Practical financial guidance for growing businesses, from reporting processes to decision support.</p>
-          </article>
+          <article class="expertise-card reveal"><span>01</span><h3>Financial Reporting</h3><p>Management accounts, monthly reporting, accruals, adjustments, variance review, and closing support.</p></article>
+          <article class="expertise-card reveal delay-1"><span>02</span><h3>Reconciliations</h3><p>Bank, cash, partner, branch, customer, supplier, and general ledger reconciliation.</p></article>
+          <article class="expertise-card reveal delay-2"><span>03</span><h3>SAP Business One</h3><p>AP/AR transactions, payments, journal entries, reporting, and data controls.</p></article>
+          <article class="expertise-card reveal"><span>04</span><h3>Internal Controls</h3><p>Clear ownership, approval hierarchy, daily follow-up, exception reporting, and process discipline.</p></article>
+          <article class="expertise-card reveal delay-1"><span>05</span><h3>Budgeting & Analysis</h3><p>Cash flow monitoring, budgeting, financial analysis, and management decision support.</p></article>
+          <article class="expertise-card reveal delay-2"><span>06</span><h3>Finance Operations</h3><p>Payroll, payables, receivables, documentation, tax support, and process improvement.</p></article>
         </div>
       </div>
     </section>
 
     <section class="section experience" id="experience">
       <div class="container">
-        <div class="section-heading light-heading reveal">
-          <div>
-            <p class="eyebrow">PROFESSIONAL JOURNEY</p>
-            <h2>Experience &amp; <em>Focus</em></h2>
-          </div>
-          <p>Selected areas that represent my professional work and career direction.</p>
-        </div>
-
+        <div class="section-heading reveal"><div><p class="eyebrow">PROFESSIONAL JOURNEY</p><h2>Experience & <em>Focus</em></h2></div><p>A career centred on reliable finance operations and stronger financial controls.</p></div>
         <div class="timeline">
-          <article class="timeline-item reveal">
-            <div class="timeline-marker"></div>
-            <div class="timeline-date">CURRENT FOCUS</div>
-            <div>
-              <h3>Finance Management &amp; Reporting</h3>
-              <p>Managing accounting activities, reporting, reconciliations, month-end closing, tax coordination and management support.</p>
-            </div>
-          </article>
-          <article class="timeline-item reveal">
-            <div class="timeline-marker"></div>
-            <div class="timeline-date">PROCESS IMPROVEMENT</div>
-            <div>
-              <h3>Stronger Finance Processes</h3>
-              <p>Improving reporting structures, defining responsibility, strengthening reconciliations and supporting timely financial closure.</p>
-            </div>
-          </article>
-          <article class="timeline-item reveal">
-            <div class="timeline-marker"></div>
-            <div class="timeline-date">ENTREPRENEURSHIP</div>
-            <div>
-              <h3>Siddiqui's Accounting Services</h3>
-              <p>Developing an independent accounting services practice focused on dependable and practical financial support.</p>
-            </div>
-          </article>
+          <article class="timeline-item reveal"><div class="timeline-marker"></div><div><small>FINANCE MANAGEMENT</small><h3>Accounts & Finance Leadership</h3><p>Managing accounting, reporting, reconciliation, tax coordination, payroll, and financial control activities.</p></div></article>
+          <article class="timeline-item reveal delay-1"><div class="timeline-marker"></div><div><small>ERP & REPORTING</small><h3>SAP Business One & Management Reporting</h3><p>Using ERP workflows to record transactions, monitor balances, prepare reports, and improve data quality.</p></div></article>
+          <article class="timeline-item reveal delay-2"><div class="timeline-marker"></div><div><small>PROCESS IMPROVEMENT</small><h3>Reconciliation & Control Frameworks</h3><p>Developing structured routines, responsibility matrices, strict timelines, and exception follow-up processes.</p></div></article>
+          <article class="timeline-item reveal"><div class="timeline-marker"></div><div><small>ENTREPRENEURSHIP</small><h3>Founder — Siddiqui's Accounting Services</h3><p>Building a dependable accounting services brand for businesses seeking practical and professional financial support.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-heading reveal"><div><p class="eyebrow">PROFESSIONAL SERVICES</p><h2>How I Can <em>Help</em></h2></div><p>Flexible support for businesses that need organised accounting and dependable financial information.</p></div>
+        <div class="service-grid">
+          <article class="service-card reveal"><div class="icon">01</div><h3>Accounting & Bookkeeping</h3><p>Organised transaction recording, ledgers, schedules, and supporting documentation.</p></article>
+          <article class="service-card reveal delay-1"><div class="icon">02</div><h3>Financial Reporting</h3><p>Monthly reports, management accounts, reconciliations, and financial review support.</p></article>
+          <article class="service-card reveal delay-2"><div class="icon">03</div><h3>Payroll & Finance Operations</h3><p>Payroll coordination, payables, receivables, expenses, and process documentation.</p></article>
+          <article class="service-card reveal"><div class="icon">04</div><h3>Reconciliation Services</h3><p>Bank, cash, partner, branch, customer, supplier, and ledger reconciliation.</p></article>
+          <article class="service-card reveal delay-1"><div class="icon">05</div><h3>Budgeting & Analysis</h3><p>Budget preparation, variance analysis, cash flow monitoring, and decision support.</p></article>
+          <article class="service-card reveal delay-2"><div class="icon">06</div><h3>Accounting Process Review</h3><p>Reviewing workflows, control gaps, reporting responsibilities, and month-end procedures.</p></article>
         </div>
       </div>
     </section>
 
     <section class="section business" id="business">
       <div class="container business-grid">
-        <div class="business-brand reveal">
-          <div class="logo-panel">
-            <img src="assets/siddiqui-accounting-logo.png" alt="Siddiqui's Accounting Services logo" />
-          </div>
-          <p class="eyebrow">MY BUSINESS</p>
-          <h2>Siddiqui's<br><em>Accounting Services</em></h2>
-          <p class="tagline">Accurate Accounts. Clear Financials. Better Decisions.</p>
-        </div>
-
-        <div class="business-content reveal">
-          <p class="eyebrow">PROFESSIONAL ACCOUNTING SUPPORT</p>
-          <p class="lead">Siddiqui's Accounting Services provides reliable accounting and financial support to businesses seeking accurate records, stronger controls and clearer financial visibility.</p>
-          <div class="services-list">
-            <div><span>01</span> Bookkeeping &amp; Accounting</div>
-            <div><span>02</span> Financial Reporting</div>
-            <div><span>03</span> Bank &amp; Account Reconciliation</div>
-            <div><span>04</span> Payroll &amp; Accounts Support</div>
-            <div><span>05</span> Budgeting &amp; Financial Analysis</div>
-            <div><span>06</span> Tax &amp; Compliance Support</div>
-          </div>
-          <a class="button button-gold" href="#contact">Discuss your requirements <span>→</span></a>
-        </div>
+        <div class="business-visual reveal"><div class="logo-shell"><img src="logo.png" alt="Siddiqui's Accounting Services logo"></div></div>
+        <div class="business-copy reveal delay-1"><p class="eyebrow">MY BUSINESS</p><h2>Siddiqui's<br><em>Accounting Services</em></h2><p class="business-tagline">Accurate Accounts. Clear Financials. Better Decisions.</p><p>Siddiqui's Accounting Services provides practical accounting and financial support to businesses that value accuracy, confidentiality, timely reporting, and clear communication.</p><ul><li>Bookkeeping and accounting support</li><li>Financial reporting and reconciliation</li><li>Payroll and finance operations</li><li>Budgeting and management support</li><li>Accounting systems and process improvement</li></ul><a href="#contact" class="button gold-button">Discuss Your Requirements <span>→</span></a></div>
       </div>
     </section>
 
-    <section class="section values">
-      <div class="container">
-        <div class="section-heading light-heading reveal">
-          <div>
-            <p class="eyebrow">HOW I WORK</p>
-            <h2>Built on <em>professional values</em></h2>
-          </div>
-        </div>
-        <div class="values-grid">
-          <article class="value-card reveal"><strong>Accuracy</strong><p>Careful work, reliable records and attention to financial detail.</p></article>
-          <article class="value-card reveal"><strong>Confidentiality</strong><p>Professional handling of sensitive business and financial information.</p></article>
-          <article class="value-card reveal"><strong>Accountability</strong><p>Clear responsibility, timely follow-up and ownership of outcomes.</p></article>
-          <article class="value-card reveal"><strong>Clarity</strong><p>Financial information presented in a way that is easy to understand and use.</p></article>
-        </div>
-      </div>
-    </section>
+    <section class="section values"><div class="container"><div class="section-heading reveal"><div><p class="eyebrow">PROFESSIONAL VALUES</p><h2>How I <em>Work</em></h2></div></div><div class="values-grid"><div class="value reveal"><b>01</b><h3>Accuracy</h3><p>Financial information must be complete, correct, and properly supported.</p></div><div class="value reveal delay-1"><b>02</b><h3>Accountability</h3><p>Every process should have clear ownership, timelines, and follow-up.</p></div><div class="value reveal delay-2"><b>03</b><h3>Confidentiality</h3><p>Financial information is handled responsibly and professionally.</p></div><div class="value reveal"><b>04</b><h3>Clarity</h3><p>Reports should be understandable and useful—not just technically correct.</p></div></div></div></section>
 
     <section class="section contact" id="contact">
-      <div class="container contact-card reveal">
-        <div>
-          <p class="eyebrow eyebrow-light">LET'S CONNECT</p>
-          <h2>Have a finance question?<br><em>Let's talk.</em></h2>
-          <p>For professional enquiries, accounting support or business collaboration, please get in touch.</p>
-        </div>
-        <div class="contact-details">
-          <div>
-            <span>EMAIL</span>
-            <a href="mailto:your.email@example.com">farhan.acc365@gmail.com</a>
-          </div>
-          <div>
-            <span>PHONE / WHATSAPP</span>
-            <a href="tel:+923159213353">+92 315 9213353</a>
-          </div>
-          <div>
-            <span>LINKEDIN</span>
-            <a href="https://www.linkedin.com/in/fmh190" target="_blank" rel="noopener">linkedin.com/in/fmh190</a>
-          </div>
+      <div class="container contact-grid">
+        <div class="reveal"><p class="eyebrow light">LET'S CONNECT</p><h2>Have a finance requirement?<br><em>Let's talk.</em></h2><p>For professional opportunities, accounting support, or business collaboration, contact me directly.</p></div>
+        <div class="contact-card reveal delay-1">
+          <div class="contact-row"><span>EMAIL</span><a href="mailto:farhan.acc365@gmail.com">farhan.acc365@gmail.com</a></div>
+          <div class="contact-row"><span>PHONE / WHATSAPP</span><a href="https://wa.me/923159213353" target="_blank" rel="noopener">+92 315 9213353</a></div>
+          <div class="contact-row"><span>LINKEDIN</span><a href="https://www.linkedin.com/in/fmh190" target="_blank" rel="noopener">linkedin.com/in/fmh190</a></div>
+          <a href="mailto:farhan.acc365@gmail.com" class="button primary full">Send an Email <span>→</span></a>
         </div>
       </div>
     </section>
   </main>
-
-  <footer>
-    <div class="container footer-inner">
-      <span>© <span id="year"></span> Muhammad Farhan Siddiqui</span>
-      <span>Accounts &amp; Finance · Professional Services</span>
-    </div>
-  </footer>
-
+  <a class="whatsapp-float" href="https://wa.me/923159213353" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WA</a>
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+  <footer><div class="container footer-inner"><span>© 2026 Muhammad Farhan Siddiqui</span><span>Accounts & Finance · Professional Services</span></div></footer>
   <script src="script.js"></script>
 </body>
 </html>
