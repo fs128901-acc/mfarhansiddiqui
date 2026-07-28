@@ -1,175 +1,169 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Muhammad Farhan Siddiqui — Accounts & Finance Professional and founder of Siddiqui's Accounting Services.">
-  <title>Muhammad Farhan Siddiqui | Accounts & Finance Professional</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Muhammad Farhan Siddiqui — Manager Accounts & Finance with 9+ years of experience in financial reporting, reconciliations, fintech operations, internal controls and ERP-based finance." />
+  <meta name="keywords" content="Muhammad Farhan Siddiqui, Accounts and Finance Manager, Financial Reporting, SAP Business One, One ERP, Xero, Reconciliation, FinTech, Peshawar" />
+  <meta name="author" content="Muhammad Farhan Siddiqui" />
+  <meta property="og:title" content="Muhammad Farhan Siddiqui | Accounts & Finance" />
+  <meta property="og:description" content="Finance leadership, reporting, reconciliations, controls and ERP-based financial operations." />
+  <meta property="og:type" content="website" />
+  <title>Muhammad Farhan Siddiqui | Manager Accounts & Finance</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <div class="progress-bar" id="progressBar"></div>
-  <header class="site-header">
-    <nav class="nav container">
-      <a class="brand" href="#home">MFS<span>.</span></a>
-      <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
-      <div class="nav-links">
-        <a href="#about">About</a><a href="#expertise">Expertise</a><a href="#experience">Experience</a><a href="#services">Services</a><a href="#business">Business</a><a href="#contact" class="nav-cta">Contact</a>
+  <div class="progress" id="progress"></div>
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Home">
+        <span class="brand-mark">FS</span>
+        <span><strong>Farhan Siddiqui</strong><small>Accounts & Finance</small></span>
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navLinks">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a><a href="#expertise">Expertise</a><a href="#experience">Experience</a><a href="#services">Services</a><a href="#contact">Contact</a>
+        <button class="theme-btn" id="themeBtn" aria-label="Toggle dark mode">◐</button>
       </div>
     </nav>
   </header>
 
   <main>
     <section class="hero" id="home">
-      <div class="hero-orb orb-a"></div><div class="hero-orb orb-b"></div>
+      <div class="hero-orb orb-one"></div><div class="hero-orb orb-two"></div>
       <div class="container hero-grid">
         <div class="hero-copy reveal">
-          <p class="eyebrow">ACCOUNTS & FINANCE PROFESSIONAL</p>
-          <h1>Muhammad Farhan <em>Siddiqui</em></h1>
-          <p class="hero-text">I help businesses improve financial accuracy, strengthen controls, simplify reporting, and make better decisions through disciplined accounting and practical finance support.</p>
+          <p class="eyebrow">Finance leadership • Reporting • Controls</p>
+          <h1>Muhammad Farhan <span>Siddiqui</span></h1>
+          <p class="role">Manager Accounts & Finance</p>
+          <p class="lead">Helping organisations strengthen financial reporting, reconciliation, controls and management visibility through practical, business-focused finance.</p>
           <div class="hero-actions">
-            <a href="#contact" class="button primary">Contact Me <span>→</span></a>
-            <a href="https://www.linkedin.com/in/fmh190" target="_blank" rel="noopener" class="button secondary">View LinkedIn</a>
-            <a href="mailto:farhan.acc365@gmail.com?subject=Request%20for%20CV" class="button text-button">Request CV</a>
+            <a class="btn btn-primary" href="assets/documents/Muhammad_Farhan_Siddiqui_CV.pdf" download>Download CV</a>
+            <a class="btn btn-outline" href="#contact">Contact Me</a>
+            <a class="btn btn-ghost" href="https://www.linkedin.com/in/fmh190" target="_blank" rel="noopener">LinkedIn ↗</a>
           </div>
-          <div class="hero-tags"><span>Financial Reporting</span><span>SAP Business One</span><span>Reconciliations</span><span>Internal Controls</span></div>
+          <div class="hero-tags"><span>SAP Business One</span><span>One ERP</span><span>Xero</span><span>Advanced Excel</span></div>
         </div>
-        <aside class="profile-panel reveal delay-1">
-          <div class="panel-top"><span class="status-dot"></span><span>Open to professional opportunities</span></div>
-          <div class="monogram">MFS</div>
-          <div class="panel-caption"><small>PROFESSIONAL FOCUS</small><strong>Finance · Controls · Reporting</strong></div>
-          <div class="mini-grid"><div><b>01</b><span>Accuracy</span></div><div><b>02</b><span>Clarity</span></div><div><b>03</b><span>Control</span></div></div>
-        </aside>
+        <div class="portrait-wrap reveal">
+          <div class="portrait-card"><img src="assets/images/farhan-siddiqui.jpg" alt="Professional portrait of Muhammad Farhan Siddiqui" /></div>
+          <div class="floating-card"><strong>9+ Years</strong><span>Cross-industry finance experience</span></div>
+        </div>
       </div>
     </section>
 
-    <section class="stats-strip" aria-label="Professional highlights">
-      <div class="container stats-grid">
-        <div class="stat reveal"><strong class="counter" data-target="10" data-suffix="+">0</strong><span>Finance competencies</span></div>
-        <div class="stat reveal delay-1"><strong class="counter" data-target="6" data-suffix="+">0</strong><span>Core service areas</span></div>
-        <div class="stat reveal delay-2"><strong class="counter" data-target="5" data-suffix="th">0</strong><span>Business-day close focus</span></div>
-        <div class="stat reveal"><strong class="counter" data-target="100" data-suffix="%">0</strong><span>Commitment to accuracy</span></div>
+    <section class="metrics section-sm">
+      <div class="container metric-grid">
+        <article><strong class="counter" data-target="9">0</strong><span>+ Years' Experience</span></article>
+        <article><strong>4</strong><span>Industry Sectors</span></article>
+        <article><strong>3</strong><span>Core ERP Platforms</span></article>
+        <article><strong>360°</strong><span>Finance Operations View</span></article>
       </div>
     </section>
 
-    <section class="section about" id="about">
+    <section class="section" id="about">
       <div class="container split">
-        <div class="reveal"><p class="eyebrow">ABOUT ME</p><h2>Numbers tell a story.<br><em>I make it clear.</em></h2></div>
-        <div class="body-copy reveal delay-1">
-          <p>I am Muhammad Farhan Siddiqui, an Accounts & Finance professional with hands-on experience in financial reporting, reconciliations, process controls, ERP-based accounting, payroll support, budgeting, tax coordination, and management reporting.</p>
-          <p>My working style is structured, practical, and accountability-driven. I focus on ensuring that financial information is accurate, timely, understandable, and useful for decision-making.</p>
-          <blockquote>“Good accounting is not only about compliance. It creates the clarity and confidence businesses need to make sound decisions.”</blockquote>
+        <div class="section-heading reveal"><p class="eyebrow">Executive profile</p><h2>Finance that is accurate, controlled and useful.</h2></div>
+        <div class="profile-copy reveal">
+          <p>I am a Finance and Accounts professional with more than nine years of progressive experience across fintech, technology, construction and textile environments. I currently serve as Manager Accounts & Finance at Pukat Technology Pvt Ltd.</p>
+          <p>My work spans financial accounting, management reporting, cash and bank reconciliation, AP/AR, partner settlements, taxation coordination, payroll verification, Chart of Accounts management and internal financial controls.</p>
+          <p>I combine detailed transaction-level review with a broader management perspective—turning finance data into clear reporting, stronger accountability and timely corrective action.</p>
+          <div class="mini-grid"><div><b>Based in</b><span>Peshawar, Pakistan</span></div><div><b>Languages</b><span>English, Urdu, Pashto</span></div><div><b>Education</b><span>BBA (Hons) – Finance</span></div><div><b>Technology</b><span>DIT & ERP proficiency</span></div></div>
         </div>
       </div>
     </section>
 
-    <section class="section dark-section" id="expertise">
+    <section class="section soft" id="expertise">
       <div class="container">
-        <div class="section-heading reveal"><div><p class="eyebrow light">CORE CAPABILITIES</p><h2>Professional <em>Expertise</em></h2></div><p>Finance expertise built around accuracy, accountability, and useful management information.</p></div>
-        <div class="expertise-grid">
-          <article class="expertise-card reveal"><span>01</span><h3>Financial Reporting</h3><p>Management accounts, monthly reporting, accruals, adjustments, variance review, and closing support.</p></article>
-          <article class="expertise-card reveal delay-1"><span>02</span><h3>Reconciliations</h3><p>Bank, cash, partner, branch, customer, supplier, and general ledger reconciliation.</p></article>
-          <article class="expertise-card reveal delay-2"><span>03</span><h3>SAP Business One</h3><p>AP/AR transactions, payments, journal entries, reporting, and data controls.</p></article>
-          <article class="expertise-card reveal"><span>04</span><h3>Internal Controls</h3><p>Clear ownership, approval hierarchy, daily follow-up, exception reporting, and process discipline.</p></article>
-          <article class="expertise-card reveal delay-1"><span>05</span><h3>Budgeting & Analysis</h3><p>Cash flow monitoring, budgeting, financial analysis, and management decision support.</p></article>
-          <article class="expertise-card reveal delay-2"><span>06</span><h3>Finance Operations</h3><p>Payroll, payables, receivables, documentation, tax support, and process improvement.</p></article>
+        <div class="section-heading centered reveal"><p class="eyebrow">Professional expertise</p><h2>Core areas of financial capability</h2><p>Practical finance experience focused on accuracy, control, compliance and decision-ready reporting.</p></div>
+        <div class="card-grid expertise-grid">
+          <article class="card reveal"><span>01</span><h3>Financial Reporting</h3><p>Periodic financial reporting, management accounts, variance review and supporting schedules.</p></article>
+          <article class="card reveal"><span>02</span><h3>Reconciliation</h3><p>Bank, cash, balance-sheet, supplier, customer and partner balance reconciliation.</p></article>
+          <article class="card reveal"><span>03</span><h3>Cash & Working Capital</h3><p>Cash position monitoring, payment planning, receivables, payables and liquidity visibility.</p></article>
+          <article class="card reveal"><span>04</span><h3>FinTech Settlements</h3><p>Transaction verification, partner closing balances, FX margins, commissions and discrepancy follow-up.</p></article>
+          <article class="card reveal"><span>05</span><h3>Internal Controls</h3><p>Process checks, exception reporting, corrective-action tracking and financial accountability.</p></article>
+          <article class="card reveal"><span>06</span><h3>Tax & Compliance</h3><p>Withholding tax documentation, banking records, remittance paperwork and external coordination.</p></article>
         </div>
       </div>
     </section>
 
-    <section class="section experience" id="experience">
+    <section class="section tech-section">
+      <div class="container split align-center">
+        <div class="section-heading reveal"><p class="eyebrow">ERP & technology</p><h2>Hands-on finance systems experience</h2><p>Strong end-user capability across accounting systems and reporting tools used in day-to-day financial operations.</p></div>
+        <div class="tech-list reveal">
+          <div><b>SAP Business One</b><span>Hands-on experience as an end user</span></div>
+          <div><b>One ERP</b><span>Hands-on experience as an end user</span></div>
+          <div><b>Xero</b><span>Accounting and reporting workflows</span></div>
+          <div><b>Microsoft Excel</b><span>Reconciliations, analysis and management reporting</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft" id="experience">
       <div class="container">
-        <div class="section-heading reveal"><div><p class="eyebrow">PROFESSIONAL JOURNEY</p><h2>Experience & <em>Focus</em></h2></div><p>A career centred on reliable finance operations and stronger financial controls.</p></div>
+        <div class="section-heading centered reveal"><p class="eyebrow">Professional experience</p><h2>Career progression</h2></div>
         <div class="timeline">
-          <article class="timeline-item reveal"><div class="timeline-marker"></div><div><small>FINANCE MANAGEMENT</small><h3>Accounts & Finance Leadership</h3><p>Managing accounting, reporting, reconciliation, tax coordination, payroll, and financial control activities.</p></div></article>
-          <article class="timeline-item reveal delay-1"><div class="timeline-marker"></div><div><small>ERP & REPORTING</small><h3>SAP Business One & Management Reporting</h3><p>Using ERP workflows to record transactions, monitor balances, prepare reports, and improve data quality.</p></div></article>
-          <article class="timeline-item reveal delay-2"><div class="timeline-marker"></div><div><small>PROCESS IMPROVEMENT</small><h3>Reconciliation & Control Frameworks</h3><p>Developing structured routines, responsibility matrices, strict timelines, and exception follow-up processes.</p></div></article>
-          <article class="timeline-item reveal"><div class="timeline-marker"></div><div><small>ENTREPRENEURSHIP</small><h3>Founder — Siddiqui's Accounting Services</h3><p>Building a dependable accounting services brand for businesses seeking practical and professional financial support.</p></div></article>
+          <article class="timeline-item reveal"><div class="time-dot"></div><div class="time-meta">Apr 2021 — Present</div><div class="time-card"><h3>Manager Accounts & Finance</h3><h4>Pukat Technology Pvt Ltd</h4><p>Lead day-to-day finance operations, reporting, reconciliations, partner settlements, financial controls, ERP-based transaction review and cross-functional issue resolution.</p><div class="chips"><span>FinTech</span><span>Reporting</span><span>Reconciliation</span><span>Controls</span></div></div></article>
+          <article class="timeline-item reveal"><div class="time-dot"></div><div class="time-meta">Feb 2018 — Oct 2020</div><div class="time-card"><h3>Accounts Officer — BRT Project, Reach 3</h3><h4>CR21G Maqbool Calson's JV</h4><p>Managed cash records, subcontractor ledgers, payment documentation, salary verification, tax records, fund schedules and management reporting for a major construction project.</p><div class="chips"><span>Construction</span><span>Cash Control</span><span>Payroll</span></div></div></article>
+          <article class="timeline-item reveal"><div class="time-dot"></div><div class="time-meta">Nov 2016 — Feb 2018</div><div class="time-card"><h3>Accountant / Trainee — Accounts</h3><h4>A.J. Textiles Mills Ltd</h4><p>Handled SAP Business One entries, supplier payments and reconciliations, withholding tax, landed cost, yield reports, bank reconciliation and inventory verification.</p><div class="chips"><span>Textile</span><span>SAP B1</span><span>Inventory</span><span>Costing</span></div></div></article>
         </div>
       </div>
     </section>
 
-    <section class="section services" id="services">
+    <section class="section" id="featured-work">
       <div class="container">
-        <div class="section-heading reveal"><div><p class="eyebrow">PROFESSIONAL SERVICES</p><h2>How I Can <em>Help</em></h2></div><p>Flexible support for businesses that need organised accounting and dependable financial information.</p></div>
-        <div class="service-grid">
-          <article class="service-card reveal"><div class="icon">01</div><h3>Accounting & Bookkeeping</h3><p>Organised transaction recording, ledgers, schedules, and supporting documentation.</p></article>
-          <article class="service-card reveal delay-1"><div class="icon">02</div><h3>Financial Reporting</h3><p>Monthly reports, management accounts, reconciliations, and financial review support.</p></article>
-          <article class="service-card reveal delay-2"><div class="icon">03</div><h3>Payroll & Finance Operations</h3><p>Payroll coordination, payables, receivables, expenses, and process documentation.</p></article>
-          <article class="service-card reveal"><div class="icon">04</div><h3>Reconciliation Services</h3><p>Bank, cash, partner, branch, customer, supplier, and ledger reconciliation.</p></article>
-          <article class="service-card reveal delay-1"><div class="icon">05</div><h3>Budgeting & Analysis</h3><p>Budget preparation, variance analysis, cash flow monitoring, and decision support.</p></article>
-          <article class="service-card reveal delay-2"><div class="icon">06</div><h3>Accounting Process Review</h3><p>Reviewing workflows, control gaps, reporting responsibilities, and month-end procedures.</p></article>
+        <div class="section-heading reveal"><p class="eyebrow">Featured work</p><h2>Where I create measurable value</h2></div>
+        <div class="work-grid">
+          <article class="work-card reveal"><h3>Financial Reporting & Management Accounts</h3><p>Structured reporting packs, account analysis and management-focused financial insight.</p></article>
+          <article class="work-card reveal"><h3>Cash & Bank Reconciliation</h3><p>Daily and periodic reconciliation, variance identification, ownership and follow-up.</p></article>
+          <article class="work-card reveal"><h3>FinTech Partner Settlements</h3><p>Closing balance comparison, transaction-level checks, FX margins and commission review.</p></article>
+          <article class="work-card reveal"><h3>Month-End & Year-End Closing</h3><p>Closing schedules, account reconciliations and timely issue resolution.</p></article>
+          <article class="work-card reveal"><h3>ERP-Based Financial Operations</h3><p>Accurate transaction review, posting, reporting and ledger management as an end user.</p></article>
+          <article class="work-card reveal"><h3>Process Improvement & Controls</h3><p>Clear ownership, reporting hierarchy, exception tracking and stronger financial discipline.</p></article>
         </div>
       </div>
     </section>
 
-    <section class="section business" id="business">
+    <section class="section business" id="services">
       <div class="container business-grid">
-        <div class="business-visual reveal"><div class="logo-shell"><img src="logo.png" alt="Siddiqui's Accounting Services logo"></div></div>
-        <div class="business-copy reveal delay-1"><p class="eyebrow">MY BUSINESS</p><h2>Siddiqui's<br><em>Accounting Services</em></h2><p class="business-tagline">Accurate Accounts. Clear Financials. Better Decisions.</p><p>Siddiqui's Accounting Services provides practical accounting and financial support to businesses that value accuracy, confidentiality, timely reporting, and clear communication.</p><ul><li>Bookkeeping and accounting support</li><li>Financial reporting and reconciliation</li><li>Payroll and finance operations</li><li>Budgeting and management support</li><li>Accounting systems and process improvement</li></ul><a href="#contact" class="button gold-button">Discuss Your Requirements <span>→</span></a></div>
-      </div>
-    </section>
-
-    <section class="section case-studies" id="case-studies">
-      <div class="container">
-        <div class="section-heading reveal">
-          <div>
-            <p class="eyebrow">PRACTICAL FINANCE IMPACT</p>
-            <h2>Selected <em>Case Studies</em></h2>
-          </div>
-          <p>Examples of the type of structured finance work I undertake. Details are presented without confidential company information.</p>
-        </div>
-        <div class="case-grid">
-          <article class="case-card reveal">
-            <span class="case-label">RECONCILIATION</span>
-            <h3>Daily Cash Variance Control</h3>
-            <p>Designed a clear ownership and escalation approach for reconciling branch cash, system cash, and partner balances.</p>
-            <ul><li>Daily variance identification</li><li>Named responsibility and deadlines</li><li>Exception follow-up and escalation</li></ul>
-          </article>
-          <article class="case-card reveal delay-1">
-            <span class="case-label">MONTH-END</span>
-            <h3>Faster Closing Discipline</h3>
-            <p>Structured closing activities around reconciliations, supporting schedules, review checkpoints, and strict reporting timelines.</p>
-            <ul><li>Closing checklist</li><li>Review-ready schedules</li><li>Fifth-business-day reporting focus</li></ul>
-          </article>
-          <article class="case-card reveal delay-2">
-            <span class="case-label">ERP & REPORTING</span>
-            <h3>SAP Business One Controls</h3>
-            <p>Supported ERP-based accounting activities while improving transaction accuracy, ledger review, and reporting consistency.</p>
-            <ul><li>AP and AR workflows</li><li>Payment and journal controls</li><li>Data quality review</li></ul>
-          </article>
+        <div class="business-brand reveal"><img src="assets/images/siddiqui-accounting-logo.png" alt="Siddiqui's Accounting Services logo" /><p class="eyebrow">Siddiqui's Accounting Services</p><h2>Reliable accounting support for growing businesses.</h2><p>Professional accounting services designed to improve record accuracy, reporting quality and financial control.</p><a class="btn btn-primary" href="#contact">Discuss Your Requirements</a></div>
+        <div class="service-list reveal">
+          <div><span>01</span><section><h3>Bookkeeping & Ledger Management</h3><p>Organised transaction records, account classification and ledger review.</p></section></div>
+          <div><span>02</span><section><h3>Financial Statements & Reporting</h3><p>Clear periodic reporting and management-friendly financial information.</p></section></div>
+          <div><span>03</span><section><h3>Bank & Balance Reconciliation</h3><p>Timely reconciliation, variance investigation and corrective follow-up.</p></section></div>
+          <div><span>04</span><section><h3>Payroll & Tax Coordination</h3><p>Payroll verification and organised documentation for tax and compliance matters.</p></section></div>
+          <div><span>05</span><section><h3>Finance Process Improvement</h3><p>Practical workflows, responsibility matrices and stronger internal controls.</p></section></div>
         </div>
       </div>
     </section>
 
-    <section class="section testimonial-section">
-      <div class="container testimonial reveal">
-        <p class="eyebrow">WORKING PRINCIPLE</p>
-        <blockquote>“Reliable finance work combines accurate numbers, clear responsibility, timely follow-up, and reporting that management can act upon.”</blockquote>
-        <span>— Muhammad Farhan Siddiqui</span>
+    <section class="section why">
+      <div class="container split align-center">
+        <div class="section-heading reveal"><p class="eyebrow">Why work with me</p><h2>Detail-oriented execution with a management mindset.</h2></div>
+        <div class="check-list reveal"><p>✓ More than nine years of cross-industry finance experience</p><p>✓ Strong command of reconciliations and financial reporting</p><p>✓ Hands-on ERP experience across SAP Business One, One ERP and Xero</p><p>✓ Practical approach to controls, accountability and issue resolution</p><p>✓ Clear communication with management, banks, partners and internal teams</p></div>
       </div>
     </section>
-
-    <section class="section values"><div class="container"><div class="section-heading reveal"><div><p class="eyebrow">PROFESSIONAL VALUES</p><h2>How I <em>Work</em></h2></div></div><div class="values-grid"><div class="value reveal"><b>01</b><h3>Accuracy</h3><p>Financial information must be complete, correct, and properly supported.</p></div><div class="value reveal delay-1"><b>02</b><h3>Accountability</h3><p>Every process should have clear ownership, timelines, and follow-up.</p></div><div class="value reveal delay-2"><b>03</b><h3>Confidentiality</h3><p>Financial information is handled responsibly and professionally.</p></div><div class="value reveal"><b>04</b><h3>Clarity</h3><p>Reports should be understandable and useful—not just technically correct.</p></div></div></div></section>
 
     <section class="section contact" id="contact">
       <div class="container contact-grid">
-        <div class="reveal"><p class="eyebrow light">LET'S CONNECT</p><h2>Have a finance requirement?<br><em>Let's talk.</em></h2><p>For professional opportunities, accounting support, or business collaboration, contact me directly.</p></div>
-        <div class="contact-card reveal delay-1">
-          <div class="contact-row"><span>EMAIL</span><a href="mailto:farhan.acc365@gmail.com">farhan.acc365@gmail.com</a></div>
-          <div class="contact-row"><span>PHONE / WHATSAPP</span><a href="https://wa.me/923159213353" target="_blank" rel="noopener">+92 315 9213353</a></div>
-          <div class="contact-row"><span>LINKEDIN</span><a href="https://www.linkedin.com/in/fmh190" target="_blank" rel="noopener">linkedin.com/in/fmh190</a></div>
-          <a href="mailto:farhan.acc365@gmail.com" class="button primary full">Send an Email <span>→</span></a>
-        </div>
+        <div class="section-heading reveal"><p class="eyebrow">Contact</p><h2>Let’s discuss your finance or accounting requirements.</h2><p>Available for professional opportunities, advisory assignments and accounting services.</p><div class="contact-details"><a href="mailto:farhan.acc365@gmail.com">farhan.acc365@gmail.com</a><a href="tel:+923159213353">+92 315 9213353</a><a href="https://wa.me/923159213353" target="_blank" rel="noopener">WhatsApp Message ↗</a><a href="https://www.linkedin.com/in/fmh190" target="_blank" rel="noopener">LinkedIn Profile ↗</a></div></div>
+        <form class="contact-form reveal" id="contactForm">
+          <label>Name<input required name="name" autocomplete="name" /></label>
+          <label>Email<input required type="email" name="email" autocomplete="email" /></label>
+          <label>Subject<input required name="subject" /></label>
+          <label>Message<textarea required name="message" rows="5"></textarea></label>
+          <button class="btn btn-primary" type="submit">Prepare Email</button>
+          <small>This form opens your default email application; no data is stored on the website.</small>
+        </form>
       </div>
     </section>
   </main>
-  <a class="whatsapp-float" href="https://wa.me/923159213353" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WA</a>
-  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
-  <footer><div class="container footer-inner"><span>© 2026 Muhammad Farhan Siddiqui</span><span>Accounts & Finance · SAP Business One · Professional Services</span></div></footer>
-  <script src="script.js"></script>
+
+  <a class="whatsapp" href="https://wa.me/923159213353" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WA</a>
+  <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+  <footer><div class="container footer-row"><p>© <span id="year"></span> Muhammad Farhan Siddiqui. All rights reserved.</p><p>Siddiqui's Accounting Services</p></div></footer>
 </body>
 </html>

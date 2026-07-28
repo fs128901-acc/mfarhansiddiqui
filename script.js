@@ -1,34 +1,11 @@
-const menuToggle=document.querySelector('.menu-toggle');const navLinks=document.querySelector('.nav-links');const progressBar=document.getElementById('progressBar');const backToTop=document.getElementById('backToTop');menuToggle?.addEventListener('click',()=>navLinks.classList.toggle('open'));document.querySelectorAll('.nav-links a').forEach(link=>link.addEventListener('click',()=>navLinks.classList.remove('open')));const revealObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting)entry.target.classList.add('visible')}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>revealObserver.observe(el));window.addEventListener('scroll',()=>{const h=document.documentElement.scrollHeight-window.innerHeight;progressBar.style.width=(h>0?window.scrollY/h*100:0)+'%';window.scrollY>500?backToTop.classList.add('visible'):backToTop.classList.remove('visible')});backToTop?.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
-
-// Animated professional statistics
-const counters = document.querySelectorAll('.counter');
-const counterObserver = new IntersectionObserver((entries, observer) => {
-  entries.forEach(entry => {
-    if (!entry.isIntersecting) return;
-    const el = entry.target;
-    const target = Number(el.dataset.target || 0);
-    const suffix = el.dataset.suffix || '';
-    const duration = 1100;
-    const start = performance.now();
-    const animate = now => {
-      const progress = Math.min((now - start) / duration, 1);
-      el.textContent = Math.floor(progress * target) + suffix;
-      if (progress < 1) requestAnimationFrame(animate);
-    };
-    requestAnimationFrame(animate);
-    observer.unobserve(el);
-  });
-}, { threshold: .5 });
-counters.forEach(counter => counterObserver.observe(counter));
-
-// Static-site enquiry form: opens the visitor's email application
-const contactForm = document.getElementById('contactForm');
-contactForm?.addEventListener('submit', event => {
-  event.preventDefault();
-  const name = document.getElementById('name').value.trim();
-  const email = document.getElementById('email').value.trim();
-  const subject = document.getElementById('subject').value.trim();
-  const message = document.getElementById('message').value.trim();
-  const body = `Name: ${name}\nEmail: ${email}\n\n${message}`;
-  window.location.href = `mailto:farhan.acc365@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-});
+const root=document.documentElement, header=document.querySelector('.site-header'), progress=document.getElementById('progress'), backTop=document.getElementById('backTop'), menuBtn=document.getElementById('menuBtn'), navLinks=document.getElementById('navLinks'), themeBtn=document.getElementById('themeBtn');
+const saved=localStorage.getItem('theme'); if(saved) root.dataset.theme=saved;
+themeBtn.addEventListener('click',()=>{const next=root.dataset.theme==='dark'?'light':'dark';root.dataset.theme=next;localStorage.setItem('theme',next)});
+menuBtn.addEventListener('click',()=>{const open=navLinks.classList.toggle('open');menuBtn.setAttribute('aria-expanded',open)});
+document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>navLinks.classList.remove('open')));
+window.addEventListener('scroll',()=>{const y=window.scrollY, max=document.documentElement.scrollHeight-innerHeight;progress.style.width=`${max?y/max*100:0}%`;header.classList.toggle('scrolled',y>20);backTop.classList.toggle('show',y>500)});
+backTop.addEventListener('click',()=>scrollTo({top:0,behavior:'smooth'}));
+const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+const counter=document.querySelector('.counter');let counted=false;new IntersectionObserver(([e])=>{if(e.isIntersecting&&!counted){counted=true;let n=0;const t=setInterval(()=>{n++;counter.textContent=n;if(n>=Number(counter.dataset.target))clearInterval(t)},120)}},{threshold:.5}).observe(counter);
+document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById('contactForm').addEventListener('submit',e=>{e.preventDefault();const d=new FormData(e.currentTarget),subject=encodeURIComponent(d.get('subject')),body=encodeURIComponent(`Name: ${d.get('name')}\nEmail: ${d.get('email')}\n\n${d.get('message')}`);location.href=`mailto:farhan.acc365@gmail.com?subject=${subject}&body=${body}`});
