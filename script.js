@@ -9,3 +9,9 @@ const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecti
 const counter=document.querySelector('.counter');let counted=false;new IntersectionObserver(([e])=>{if(e.isIntersecting&&!counted){counted=true;let n=0;const t=setInterval(()=>{n++;counter.textContent=n;if(n>=Number(counter.dataset.target))clearInterval(t)},120)}},{threshold:.5}).observe(counter);
 document.getElementById('year').textContent=new Date().getFullYear();
 document.getElementById('contactForm').addEventListener('submit',e=>{e.preventDefault();const d=new FormData(e.currentTarget),subject=encodeURIComponent(d.get('subject')),body=encodeURIComponent(`Name: ${d.get('name')}\nEmail: ${d.get('email')}\n\n${d.get('message')}`);location.href=`mailto:farhan.acc365@gmail.com?subject=${subject}&body=${body}`});
+
+
+// Subtle parallax and animated counters for a more dynamic finance portfolio
+const hero=document.querySelector('.hero');
+window.addEventListener('mousemove',e=>{if(!hero||innerWidth<900)return;const x=(e.clientX/innerWidth-.5)*10,y=(e.clientY/innerHeight-.5)*10;hero.style.setProperty('--mx',`${x}px`);hero.style.setProperty('--my',`${y}px`)});
+document.querySelectorAll('.metric-grid strong').forEach(el=>{const raw=el.textContent.trim(),match=raw.match(/^(\d+)(.*)$/);if(!match)return;const target=Number(match[1]),suffix=match[2];el.textContent='0'+suffix;let done=false;new IntersectionObserver(([entry],obs)=>{if(entry.isIntersecting&&!done){done=true;let n=0;const step=Math.max(1,Math.ceil(target/30));const timer=setInterval(()=>{n=Math.min(target,n+step);el.textContent=n+suffix;if(n>=target)clearInterval(timer)},45);obs.disconnect()}},{threshold:.5}).observe(el)});
